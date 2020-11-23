@@ -6,9 +6,10 @@ public class LeftArrayRotation {
 
 
         for(int i = 0; i < rotate ; i++){
-            int temp = arr[i];
-            arr[i] = arr[i+rotate];
-            arr[i+rotate] = temp;
+
+            arr[i] = arr[i] + arr[i+rotate];
+            arr[i+rotate] = arr[i] - arr[i+rotate];
+            arr[i] = arr[i] - arr[i+rotate];
         }
 
         System.out.println(arr);
