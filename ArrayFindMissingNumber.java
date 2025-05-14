@@ -13,7 +13,7 @@ public class ArrayFindMissingNumber {
             long temp = n-1;
             while(temp --> 0)
                 total -= sc.nextLong();
-            System.out.println(total);
+            System.out.println(total+"This is PR 2");
         }
 
 
